@@ -8,5 +8,13 @@ using UnityEngine.UI;
 
 public class SpellingGameOverUI : GameOverUI
 {
-    
+    private void OnEnable()
+    {
+        EventManager.OnGameOver += HandleGameOver;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnGameOver -= HandleGameOver;
+    }
 }

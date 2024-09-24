@@ -33,8 +33,6 @@ public class SpellingGameManager : MonoBehaviour, IGameManager
     [SerializeField] private AudioClip incorrect;
     [SerializeField] private AudioClip gameOver;
 
-    public static event UnityAction OnGameOver;
-
     private void Awake()
     {
         inst = this;
@@ -115,7 +113,7 @@ public class SpellingGameManager : MonoBehaviour, IGameManager
                 if (SoundManager.inst != null)
                     SoundManager.PlaySound(gameOver);
 
-                OnGameOver?.Invoke();
+                EventManager.InvokeGameOver();
             }
             else
             {

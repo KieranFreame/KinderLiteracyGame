@@ -11603,7 +11603,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 2015040273}
   finalScoreText: {fileID: 648022600}
   maxRoundCount: 0
-  victory: {fileID: 0}
+  victory: {fileID: 8300000, guid: 0c63af7cd1882fc4eb06358bf69b391e, type: 3}
 --- !u!1001 &724938713
 PrefabInstance:
   m_ObjectHideFlags: 0
